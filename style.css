@@ -1,0 +1,94 @@
+@import url("https://fonts.google.com/specimen/Inter");
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  background-color: var(--Grey900);
+  color: var(--White);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    height: 90vh;
+    padding: 2rem;
+}
+
+.container {
+    background-color: var(--Grey800);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    border-radius: 50%;
+    height: 80px;
+}
+
+#profile-name {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#profile-location {
+    font-weight: bold;
+    color: var(--Green);
+    margin-bottom: 2rem;
+}
+
+.social-container {
+    margin-top: 2rem;
+}
+
+.social-container > button {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: var(--Grey700);
+    color: var(--White);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.social-container > button:active {
+    background-color: var(--Green);
+    color: var(--Grey900);
+}
